@@ -18,6 +18,7 @@ defmodule Week04Web.Router do
 
     get "/", PageController, :index
     get "/hello", Week04Controller, :index
+    get "/hello/:messenger", Week04Controller, :show
   end
 
   # Other scopes may use custom stacks.
