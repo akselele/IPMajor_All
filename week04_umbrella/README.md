@@ -122,3 +122,4 @@ Add a new page so that `http://localhost:4000/hello/:messenger` outputs `Hello W
 The solution can be found in the dev branch.
 
 
+All information is gathered from [https://hexdocs.pm/phoenix/adding_pages.html#a-new-view](Hexdocs).
