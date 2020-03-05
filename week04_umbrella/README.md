@@ -3,6 +3,8 @@
 Before we start, you need to install a [MySQL local server](https://dev.mysql.com/downloads/file/?id=492814). 
 Remember your MySQL password and username!
 
+In `config/dev.exs` change the username and password tab to your MysQL username and password.
+
 ## Creating a new project
 
 To reitarate creating a new project:
