@@ -1,0 +1,88 @@
+<div>
+        <style>
+            .about_print_link {
+                border: 1px solid black;
+                padding: 1em;
+                margin-bottom: 2em;
+                display:inline-block;
+                background-color: white;
+            }
+        </style>
+
+        <div class="about_print_link">🖨️ Get the printable version <a href="/cv_print" target="_blank">here!</a></div>
+
+        <h1 id="axel-hamelryck">Axel Hamelryck</h1>
+
+        <h3 id="contacts">Contacts</h3>
+        <div>
+            <script type="text/javascript">
+                user = 'ahamelryck';
+                domain = 'gmail.com';
+                document.write('<p>📧 Email: <a href=\"mailto:' + user + '@' + domain + '\">' +  user + '@' + domain + '</a></p>');
+                // document.write('<p>📧 Email: <a href=\"mailto:' + user2 + '@' + domain2 + '\">' +  user2 + '@' + domain2 + '</a></p>');
+            </script>
+
+        </div>
+        <p>📞 Discord: axelele#4537</p>
+        <p>📞 Phone: +32 494 26 94 06</p>
+
+        <h3 id="bio">Bio</h3>
+        <p><%= gettext "I live in Haacht, near Leuven, Belgium.
+            I am currently in my second year of Applied Informatics at UCLL in Leuven. I have chosen to enroll the software development specialization because I've always liked programming and thought I was a good programmer."%> </p>
+
+        <p>I also have a deep interest in game development. I plan on following a second bachelor for game development in Kortrijk at the DAE, Howest.</p>
+
+        <h3 id="spoken-languages">Spoken languages</h3>
+
+        <p>Dutch (native), French (native) and English</p>
+
+        <h2 id="main-languages-and-ides">Main languages and frameworks, IDEs</h2>
+        <ul>
+            <li>Java, C#, JavaScript, Python, SQL</li>
+            <li>Visual Studio Code, IntelliJ IDEA</li>
+            <li>Linux</li>
+            <li>Windows Server</li>
+        </ul>
+
+        <h2 id="work-experience">Work Experience</h2>
+
+        <h3>Network & Systems Intern</h3>
+
+        <p>Royal Atheneum Vilvoorde, January 2017 - February 2017</p>
+
+        <p>In this high school internship I was the network and systems manager for another high school.
+            I had to implement a FOG system to remotely & automatically upgrade Windows and install Office 365 on all computers in the network.</p>
+
+        <p>In small, I was also the network and systems manager for times my supervisor wasn't available.
+            I had to add new students into the system and make sure they have their own password and privileges on the computers.
+        </p>
+
+        <p>Results:</p>
+        <ul>
+            <li>Fully automated Windows and Office 365 installation for computers all over the network, with one simple click.</li>
+            <li>Deeper understanding of Linux and Windows Servers, specifically group policies.</li>
+        </ul>
+
+        <h3>Salesman Studentjob</h3>
+
+        <p>Makro Machelen, 2015 - 2019</p>
+
+        <p>I was a student job for every weekend at a bakery for four years.</p>
+
+        <h3>Extras</h3>
+
+        <p>At every end of the semester, our school has a project week, with groups of 4-8 students (varying every project).
+            Every project, I chose to be the project manager and/or team leader because I thought I was very good at it. My professors complimented me for it.</p>
+
+        <p>I am very motivated to work and can learn really fast. If I don’t understand something,
+            I will do everything to understand it and be able to work with it. </p>
+
+
+        <p><a href="javascript:window.history.back();">&lt;== Back</a></p>
+
+        <footer class="footer">
+            <hr />
+        </footer>
+
+
+    </div>

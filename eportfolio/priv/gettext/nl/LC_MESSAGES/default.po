@@ -1,0 +1,32 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/eportfolio_web/templates/page/index.html.eex:15
+msgid "I am a student from Haacht, following Applied Informatics in Leuven, Belgium. I have chosen the software development specialization\n            because I thought my programming was good enough to pursue a career in it."
+msgstr ""
+
+#, elixir-format
+#: lib/eportfolio_web/templates/page/index.html.eex:19
+msgid "I have always been passionate about computers, and it's what got me into programming. Even long before studying in college, I was already learning about programming\n            languages (C# and C++) and the general working of computers."
+msgstr ""
+
+#, elixir-format
+#: lib/eportfolio_web/templates/page/index.html.eex:22
+msgid "In my free time, I like to play games. Sometimes a little too much which almost got me studying game development. For sakes of job security, I did not\n            study at a game development school. I do have plans to pursue this dream after I finish this bachelor,\n                although I am trying to learn some Unity and Unreal Engine at the moment."
+msgstr ""
+
+#, elixir-format
+#: lib/eportfolio_web/templates/page/cv.html.eex:30
+msgid "I live in Haacht, near Leuven, Belgium.\r\n            I am currently in my second year of Applied Informatics at UCLL in Leuven. I have chosen to enroll the software development specialization because I've always liked programming and thought I was a good programmer."
+msgstr ""

@@ -1,0 +1,35 @@
+<div>
+        <meta property="og:title" content="axelele" />
+
+        <meta property="og:type" content="website" />
+
+        <meta property="og:image" content="https://github.com/akselele.png" />
+
+
+
+
+        <div class="content">
+
+            <h1 id="axel-hamelryck">Axel Hamelryck</h1>
+
+            <p><%= gettext "I am a student from Haacht, following Applied Informatics in Leuven, Belgium. I have chosen the software development specialization
+            because I thought my programming was good enough to pursue a career in it." %></p>
+
+
+            <p><%= gettext "I have always been passionate about computers, and it's what got me into programming. Even long before studying in college, I was already learning about programming
+            languages (C# and C++) and the general working of computers."%></p>
+
+            <p><%= gettext "In my free time, I like to play games. Sometimes a little too much which almost got me studying game development. For sakes of job security, I did not
+            study at a game development school. I do have plans to pursue this dream after I finish this bachelor,
+                although I am trying to learn some Unity and Unreal Engine at the moment." %></p>
+
+
+        </div>
+
+        <footer class="footer">
+            <hr/>
+        </footer>
+
+
+
+    </div>

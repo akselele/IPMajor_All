@@ -1,0 +1,5 @@
+JS dependency /apps/.../app.js >> fixed
+
+both argon2 and bcrypt don't work without nmake which gives me compile errors, have reinstalled C++ build
+tools with visual studio, editing path variables, executing recommended cmd commands, etc... >> not fixed
+

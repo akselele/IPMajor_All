@@ -1,0 +1,118 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" href="<%= Routes.static_path(@conn, "/images/a.png") %>">
+
+    <!-- Meta information -->
+    <title><%= assigns[:page_title] || "axelele" %></title>
+    <meta name="description"
+          content="">
+    <link rel="canonical"
+          href="https://axelele.com/" />
+    <link href="<%= Routes.static_path(@conn, "/css/style.css") %>" rel="stylesheet">
+
+    <!-- Prism.js -->
+
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/prism.css") %>"/>
+
+
+
+    <!-- Custom style -->
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+
+
+
+    <!-- 'jekyll-seo' plugin -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <meta property="og:title" content="axelele" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="canonical" href="https://axelele.com/" />
+    <meta property="og:url" content="https://axelele.com/" />
+    <meta property="og:site_name" content="axelele" />
+    <script type="application/ld+json">
+        {"@type":"WebSite","url":"https://axelele.com/","headline":"axelele","name":"axelele","@context":"https://schema.org"}</script>
+    <!-- End Jekyll SEO tag -->
+
+
+    <script src="<%= Routes.static_path(@conn, "/js/prism.js") %>" ></script>
+
+
+
+</head>
+
+
+<body>
+<div class="container">
+    <div class="header">
+        <!-- <a href="https://github.com/akselele"> -->
+        <a class="site-avatar-home-link" href="/"><img class="site-avatar" src="<%= Routes.static_path(@conn, "/images/axel.jpeg") %>" ></a>
+        <!-- </a> -->
+        <div class="top-nav">
+            <h1 class="site-title">axelele</h1>
+            <div class="social-container">
+
+
+
+                <div class="social-link">
+
+                    <a href="/cv">
+
+                        curriculum vitae
+                    </a>
+                </div>
+
+
+
+
+                <div class="social-link">
+
+                    <a href="/contact">
+
+                        contact
+                    </a>
+                </div>
+
+
+
+
+                <div class="social-link">
+
+                    <a href="https://github.com/akselele" target="_blank">
+
+                        github
+                    </a>
+                </div>
+
+
+                <div class="social-link">
+
+                    <a href="https://www.linkedin.com/in/axel-hamelryck-202138152/" target="_blank">
+
+                        linkedin
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <main role="main" class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>" ></script>
+</div>
+</div>
+</body>
+
+
+<%# <!-- For some reaso I have to switch the two languages because they would do the inverse of what I asked. 
+See the default.po files aswell. --> %>
+<p><%= new_locale @conn, :nl, "Switch to English" %></p>
+<p><%= new_locale @conn, :en, "Switch to Dutch" %></p>
+</html>

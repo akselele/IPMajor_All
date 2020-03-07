@@ -1,0 +1,70 @@
+<div>
+        <style>
+            .about_print_link {
+                border: 1px solid black;
+                padding: 1em;
+                margin-bottom: 2em;
+                display:inline-block;
+                background-color: white;
+            }
+        </style>
+
+        <h1 id="axel-hamelryck">Axel Hamelryck</h1>
+
+        <h3 id="contacts">Contacts</h3>
+        <div>
+            <script type="text/javascript">
+                user = 'ahamelryck';
+                domain = 'gmail.com';
+                document.write('<p>📧 Email: <a href=\"mailto:' + user + '@' + domain + '\">' +  user + '@' + domain + '</a></p>');
+                // document.write('<p>📧 Email: <a href=\"mailto:' + user2 + '@' + domain2 + '\">' +  user2 + '@' + domain2 + '</a></p>');
+            </script>
+
+        </div>
+        <p>📞 Discord: axelele#4537</p>
+        <p>📞 Phone: +32 494 26 94 06</p>
+        <p><a href="javascript:window.history.back();">&lt;== Back</a></p>
+
+        <footer class="footer">
+
+            <!-- <div id="disqus_thread">
+            </div> -->
+            <!-- <script>
+
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+              var disqus_config = function () {
+                this.page.url = "https://yatima1460.me/about";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "about"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+
+              (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://yatima1460.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript> -->
+            <hr />
+
+
+
+            <!-- <h3 class="footer-heading">yatima1460</h3> -->
+
+            <div class="grid t-hackcss-sm-reversed-grid">
+
+                <div id="footer-spacer" class="cell -1of12"></div>
+
+                <div class="cell -6of12">
+                    <p></p>
+                </div>
+            </div>
+            <script src="js/prism.js"></script>
+        </footer>
+
+
+    </div>
