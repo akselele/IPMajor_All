@@ -17,6 +17,10 @@ config :auth_web,
   ecto_repos: [Auth.Repo],
   generators: [context_app: :auth]
 
+config :auth_web, AuthWeb.Guardian,
+  issuer: "auth_web",
+  secret_key: "v4aO4NfXrlS+MWbZdcmjPSHyLLtt8WtvoZYzAhQ47CkNxtK3FPjRpwzmbHgB+f7J" # paste input here  
+
 # Configures the endpoint
 config :auth_web, AuthWeb.Endpoint,
   url: [host: "localhost"],

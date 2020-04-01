@@ -39,7 +39,7 @@ defmodule Auth.MixProject do
       {:ecto_sql, "~> 3.1"},
       {:myxql, ">= 0.0.0"},
       {:jason, "~> 1.0"},
-      {:bcrypt_elixir, "~> 2.2.0"}
+      {:pbkdf2_elixir, "~> 1.0"}
     ]
   end
 

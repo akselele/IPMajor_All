@@ -5,9 +5,10 @@ defmodule Auth.UserContext.User do
   @acceptable_roles ["Admin", "Manager", "User"]
 
   schema "users" do
+    field :username, :string
+    field :password, :string, virtual: true
     field :hashed_password, :string
-    field :role, :string
-    field :username, :string, default: "User"
+    field :role, :string, default: "User"
   end
 
   def get_acceptable_roles, do: @acceptable_roles
@@ -15,16 +16,16 @@ defmodule Auth.UserContext.User do
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:username, :hashed_password, :role])
-    |> validate_required([:username, :hashed_password, :role])
+    |> cast(attrs, [:username, :password, :role])
+    |> validate_required([:username, :password, :role])
     |> validate_inclusion(:role, @acceptable_roles)
     |> put_password_hash()
   end
 
   defp put_password_hash(
-    %Ecto.Changeset{valid? true, changes: %{password: password}} = changeset
-  ) do
-  change(changeset, hashed_password: Bcrypt.hash_pwd_salt(password))
+         %Ecto.Changeset{valid?: true, changes: %{password: password}} = changeset
+       ) do
+    change(changeset, hashed_password: Pbkdf2.hash_pwd_salt(password))
   end
 
   defp put_password_hash(changeset), do: changeset

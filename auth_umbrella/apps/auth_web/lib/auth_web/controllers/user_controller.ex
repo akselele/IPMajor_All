@@ -12,7 +12,7 @@ defmodule AuthWeb.UserController do
   def new(conn, _params) do
     changeset = UserContext.change_user(%User{})
     roles = UserContext.get_acceptable_roles()
-    render(conn, "new.html", changeset: changeset, acceptable roles: roles)
+    render(conn, "new.html", changeset: changeset, acceptable_roles: roles)
   end
 
   def create(conn, %{"user" => user_params}) do

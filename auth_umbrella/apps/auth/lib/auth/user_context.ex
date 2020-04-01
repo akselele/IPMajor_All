@@ -10,6 +10,7 @@ defmodule Auth.UserContext do
 
   @doc """
   Returns the list of users.
+  
 
   ## Examples
 
@@ -20,6 +21,8 @@ defmodule Auth.UserContext do
   def list_users do
     Repo.all(User)
   end
+
+  defdelegate get_acceptable_roles(), to: User
 
   @doc """
   Gets a single user.
@@ -101,4 +104,23 @@ defmodule Auth.UserContext do
   def change_user(%User{} = user) do
     User.changeset(user, %{})
   end
+
+  def authenticate_user(username, plain_text_password) do
+    case Repo.get_by(User, username: username) do
+      nil ->
+        Pbkdf2.no_user_verify()
+        {:error, :invalid_credentials}
+
+      user ->
+        if Pbkdf2.verify_pass(plain_text_password, user.hashed_password) do
+          {:ok, user}
+        else
+          {:error, :invalid_credentials}
+        end
+    end
+  end
+
+  def get_user(id), do: Repo.get(User, id)
+
+  
 end
